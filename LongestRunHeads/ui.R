@@ -76,7 +76,7 @@ shinyUI(
               "Jimmy Doi and Andrew Kerr"),align="right", style = "font-size: 8pt"),
         
         div("Shiny source files:",
-            a(href="https://gist.github.com/calpolystat/eee9a9e00dd4ddd68614",
+            a(href="https://github.com/Wander03/hot_hands/tree/master/LongestRunHeads",
               target="_blank","GitHub Gist"),align="right", style = "font-size: 8pt"),
         
         div(a(href="http://www.statistics.calpoly.edu/shiny",target="_blank",
