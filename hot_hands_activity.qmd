@@ -1,0 +1,63 @@
+---
+title: "Hot Hand Shooting"
+author: "Andrew, Daniel, Rachel, Lily"
+format: html
+editor: visual
+---
+
+## Set Up
+
+```{r}
+#| label: librarys
+#| message: false
+
+library(tidyverse)
+library(here)
+```
+
+## Visualizing Bias (ft. Dr. Doi)
+
+1.  Open this [shiny app](https://andrew-d-kerr.shinyapps.io/LongestRunHeads/).
+
+2.  What is the P(Heads \| Heads)? In the long run, would you expect this value to be less then, approximately, or greater than 0.5? Why?
+
+3.  Increase the number of repetitions to 1,000, what is the average value of P(H\|H)? Compare your results with the rest of the group, are they what you expected?
+
+4.  What shape do you expect the distribution of P(H\|H) to take?
+
+5.  Increase the number of repetition to 10,000. Is the shape what you expected?
+
+6.  Refresh the page to clear your simulations. Try changing the probability of heads to a number of your choosing. What do you think the average P(H\|H) will be?
+
+7.  Try running 1,000 trials with different P(H) values (remember to refresh the page before changing to clear the plots!). Are the values you are seeing what you expected?
+
+8.  Set the probability of heads back to 0.5, check the box to "Show quantifying bias plot," and set the number of repetitions to 1,000. What do you notice?
+
+9.  What do you think will happen to the shape of this graph as the number of trials decreases?
+
+10. Try generating 1,000 repetitions with 10, 20, and 50 trials (you do not have to refresh the page between runs this time!). Was your intuition correct?
+
+11. Will the same results hold true for different values of the probability of heads? Try running 1,000 repetitions with 50 trials at P(H) = 0.25 and 0.75. What do you notice?
+
+## NBA Three-Point Contest for 2013-2017
+
+```{r}
+#| label: data-read-in
+#| message: false
+
+nba <- read.csv(here('data', 'nba3point.csv'))
+```
+
+## Permutations Test (ft. Dr. Ross)
+
+1.  On first glance, which of these data sets appears to have evidence of a hot hand? Why? (Data is from 2016 NBA 3 point contest)
+
+    Klay Thompson: 1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,1,0,0,0,1,1,0,1,0,1,0,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1
+
+    Steph Curry: 0,0,0,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,0,0,1,0,1,1,0,1,1,0,1
+
+    Devin Booker: 0,0,0,0,1,0,0,0,1,0,1,0,1,0,1,1,0,1,1,1,0,1,1,1,1,1,0,0,0,1,0,1,1,0,1,0,1,0,1
+
+    Kevin Ross: 0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,0,1,0,0,0,1,1,1,1,1,0,0,1,1,1,1,0,0,0,1,1,1,1,0,0,0,0,0,1
+
+2.  Run the data through this [shiny app](http://shiny.calpoly.sh/Hothand/). Set streak length to 3 and increase the number of shuffles to simulate to 100. Do the results match your intuition?
