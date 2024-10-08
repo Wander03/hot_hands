@@ -3,17 +3,8 @@ title: "Hot Hand Shooting"
 author: "Andrew, Daniel, Rachel, Lily"
 format: html
 editor: visual
+theme: lux
 ---
-
-## Set Up
-
-```{r}
-#| label: librarys
-#| message: false
-
-library(tidyverse)
-library(here)
-```
 
 ## Visualizing Bias (ft. Dr. Doi)
 
@@ -38,15 +29,6 @@ library(here)
 10. Try generating 1,000 repetitions with 10, 20, and 50 trials (you do not have to refresh the page between runs this time!). Was your intuition correct?
 
 11. Will the same results hold true for different values of the probability of heads? Try running 1,000 repetitions with 50 trials at P(H) = 0.25 and 0.75. What do you notice?
-
-## NBA Three-Point Contest for 2013-2017
-
-```{r}
-#| label: data-read-in
-#| message: false
-
-nba <- read.csv(here('data', 'nba3point.csv'))
-```
 
 ## Permutations Test (ft. Dr. Ross)
 
