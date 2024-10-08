@@ -8,7 +8,7 @@ theme: lux
 
 ## Visualizing Bias (ft. Dr. Doi)
 
-1.  Open this [shiny app](https://andrew-d-kerr.shinyapps.io/LongestRunHeads/).
+1.  Open this [shiny app](https://andrew-d-kerr.shinyapps.io/LongestRunHeads/){target="_blank"}.
 
 2.  What is the P(Heads \| Heads)? In the long run, would you expect this value to be less then, approximately, or greater than 0.5? Why?
 
@@ -42,7 +42,7 @@ theme: lux
 
     Kevin Ross: 0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,0,1,0,0,0,1,1,1,1,1,0,0,1,1,1,1,0,0,0,1,1,1,1,0,0,0,0,0,1
 
-2.  Run the data through this [shiny app](http://shiny.calpoly.sh/Hothand/). Set streak length to 3 and increase the number of shuffles to simulate to 100. Do the results match your intuition?
+2.  Run the data through this [shiny app](http://shiny.calpoly.sh/Hothand/){target="_blank"}. Set streak length to 3 and increase the number of shuffles to simulate to 100. Do the results match your intuition?
 
 ## Emergency Discussion Questions
 
