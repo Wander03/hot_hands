@@ -3,6 +3,7 @@ title: "Hot Hand Shooting"
 author: "Andrew, Daniel, Rachel, Lily"
 format: html
 editor: visual
+theme: lux
 ---
 
 ## Visualizing Bias (ft. Dr. Doi)
